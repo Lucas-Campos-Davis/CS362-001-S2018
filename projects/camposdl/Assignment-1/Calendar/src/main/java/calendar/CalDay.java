@@ -104,7 +104,7 @@ public class CalDay {
 	 * time set placed at the beginning.
 	 */
 	public Iterator<?> iterator() {
-	    if (isValid()) {
+	    if (!isValid()) {
 	        return getAppts().iterator();
 	    }
 	    else {
